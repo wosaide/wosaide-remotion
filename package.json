@@ -8,7 +8,9 @@
     "render:filament": "remotion render src/index.ts BirdFilament out/bird-filament.webm --codec=vp8 --pixel-format=yuva420p --image-format=png",
     "still": "remotion still src/index.ts WOSAideBrand out/WOSAide-Brand-final.png --frame=135",
     "typecheck": "tsc --noEmit",
-    "icons:build": "bash scripts/build-icon-kit.sh"
+    "icons:build": "bash scripts/build-icon-kit.sh",
+    "icons:verify": "bash scripts/verify-icon-kit.sh",
+    "icons:version": "cat icons/CURRENT"
   },
   "dependencies": {
     "@remotion/cli": "4.0.518",
