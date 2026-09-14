@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="84 16 832 474" role="img" aria-labelledby="title desc">
+  <title id="title">WOS Aide animated brand mark</title>
+  <desc id="desc">Transparent animated SVG with the final bird, two laurels and five gold stars.</desc>
+  <style>
+    :root { --ink: #242424; --gold: #ffb728; --silk: #a9a9a9; }
+    .branch-enter { --branch-delay: 0s; opacity: 1; }
+    .branch-enter.right { --branch-delay: .04s; }
+    .branch-left { transform-box: fill-box; transform-origin: 82% 100%; animation: branchLeft 4.6s ease-in-out 1.05s infinite; }
+    .branch-right { transform-box: fill-box; transform-origin: 18% 100%; animation: branchRight 4.6s ease-in-out 1.12s infinite; }
+    .laurel-leaf { opacity: 0; transform-box: fill-box; transform-origin: 50% 100%; animation: leafGrow .46s cubic-bezier(.2,1.18,.35,1) forwards; }
+    .leaf-0 { animation-delay: calc(var(--branch-delay) + .04s); }
+    .leaf-1 { animation-delay: calc(var(--branch-delay) + .10s); }
+    .leaf-2 { animation-delay: calc(var(--branch-delay) + .16s); }
+    .leaf-3 { animation-delay: calc(var(--branch-delay) + .22s); }
+    .leaf-4 { animation-delay: calc(var(--branch-delay) + .28s); }
+    .leaf-5 { animation-delay: calc(var(--branch-delay) + .34s); }
+    .leaf-6 { animation-delay: calc(var(--branch-delay) + .40s); }
+    .leaf-7 { animation-delay: calc(var(--branch-delay) + .46s); }
+    .leaf-8 { animation-delay: calc(var(--branch-delay) + .52s); }
+    .leaf-9 { animation-delay: calc(var(--branch-delay) + .58s); }
+    .leaf-10 { animation-delay: calc(var(--branch-delay) + .64s); }
+    .leaf-11 { animation-delay: calc(var(--branch-delay) + .70s); }
+    .leaf-12 { animation-delay: calc(var(--branch-delay) + .76s); }
+    .bird-enter { transform-box: fill-box; transform-origin: 50% 72%; animation: birdEnter .95s cubic-bezier(.18,.9,.2,1) both, birdFloat 4s ease-in-out 1.15s infinite; }
+    .bird-fill { opacity: 0; animation: birdFill .7s ease-out .48s forwards; }
+    .bird-outline { fill: none; stroke: var(--ink); stroke-width: 17; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; opacity: .92; animation: drawBird .82s ease-in-out .14s forwards, outlineFade .38s ease .78s forwards; }
+    .bird-filament { fill: none; stroke: var(--silk); stroke-width: 5; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-dasharray: .028 .972; opacity: 0; animation: filamentIn .35s ease .4s forwards, filamentFlow 2.7s linear .4s infinite; }
+    .star { --intro-rotation: 0deg; --intro-x: 0px; opacity: 0; transform-box: fill-box; transform-origin: center; animation: starPop .5s cubic-bezier(.2,1.5,.35,1) forwards, starPulse 3.2s ease-in-out 1.6s infinite; }
+    .star.left { --intro-rotation: -10deg; }
+    .star.right { --intro-rotation: 10deg; }
+    .s1 { --intro-x: 24px; animation-delay: 1.18s, 1.95s; }
+    .s2 { --intro-x: 13px; animation-delay: .98s, 1.75s; }
+    .s3 { --intro-x: 0px; animation-delay: .78s, 1.55s; }
+    .s4 { --intro-x: -13px; animation-delay: .98s, 1.75s; }
+    .s5 { --intro-x: -24px; animation-delay: 1.18s, 1.95s; }
+    @keyframes leafGrow { 0% { opacity: 0; transform: translateY(22px) scale(.05); } 68% { opacity: 1; transform: translateY(-1.5px) scale(1.06); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+    @keyframes branchLeft { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(-1.35deg); } }
+    @keyframes branchRight { 0%,100% { transform: rotate(0deg); } 50% { transform: rotate(1.35deg); } }
+    @keyframes birdEnter { 0% { opacity: 0; transform: translateY(12px) scale(.93) rotate(-1.2deg); } 65% { opacity: 1; transform: translateY(-2px) scale(1.012) rotate(.25deg); } 100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); } }
+    @keyframes birdFloat { 0%,100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-3.5px) rotate(-.35deg); } }
+    @keyframes birdFill { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes drawBird { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes outlineFade { from { opacity: .92; } to { opacity: 0; } }
+    @keyframes filamentIn { from { opacity: 0; } to { opacity: .36; } }
+    @keyframes filamentFlow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -1; } }
+    @keyframes starPop { 0% { opacity: 0; transform: translate(var(--intro-x), 7px) scale(.22) rotate(var(--intro-rotation)); } 70% { opacity: 1; transform: translate(0, -1px) scale(1.12) rotate(0deg); } 100% { opacity: 1; transform: translate(0, 0) scale(1) rotate(0deg); } }
+    @keyframes starPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.045); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } .bird-outline,.bird-filament { display: none; } }
+  </style>
+
+  <defs>
+    <symbol id="laurel" viewBox="0 0 331.946 703.554">
+      <path class="laurel-leaf leaf-0" fill="var(--ink)" d="M226.098 649.152C207.598 647.652 184.598 652.902 169.098 662.402C162.598 665.902 161.848 671.652 167.348 676.652C181.848 689.902 203.848 699.652 222.348 700.902C241.848 703.402 265.098 697.402 280.848 685.652C285.598 682.152 286.098 677.152 281.348 672.902C267.598 659.902 245.348 650.402 226.098 649.152Z"/>
+      <path class="laurel-leaf leaf-1" fill="var(--ink)" d="M135.098 561.902C117.348 555.402 93.3479 554.902 75.5979 560.152C69.0979 562.152 67.3479 567.402 70.8479 573.402C81.3479 589.902 100.098 604.902 117.848 611.152C135.848 618.402 160.098 618.402 178.348 610.902C183.848 608.902 185.348 604.152 182.348 598.902C171.848 582.402 153.098 567.902 135.098 561.902Z"/>
+      <path class="laurel-leaf leaf-2" fill="var(--ink)" d="M294.348 540.152C284.348 556.152 278.348 579.152 279.348 597.402C280.348 616.652 289.348 638.902 301.848 652.902C305.848 657.652 310.598 657.652 314.598 652.652C326.848 637.902 333.598 614.652 331.598 594.652C330.348 576.152 321.098 554.152 308.348 539.152C303.598 533.652 298.348 534.152 294.348 540.152Z"/>
+      <path class="laurel-leaf leaf-3" fill="var(--ink)" d="M228.598 473.902C214.848 486.402 203.098 507.152 199.598 525.152C195.598 544.402 198.348 568.402 206.848 584.652C209.348 590.152 214.348 591.152 219.098 587.652C234.598 576.402 246.848 555.652 250.348 535.902C253.848 517.402 250.598 493.652 242.098 476.402C239.348 469.652 233.848 468.652 228.598 473.902Z"/>
+      <path class="laurel-leaf leaf-4" fill="var(--ink)" d="M0.34787 436.152C3.09787 454.902 14.3479 476.652 27.8479 490.152C41.3479 504.152 63.3479 513.652 83.0979 514.152C89.0979 514.652 92.3479 510.652 91.5979 504.652C88.3479 485.152 77.0979 464.152 63.3479 451.902C49.8479 438.902 28.5979 428.652 9.84787 426.152C3.09787 425.402-0.90213 429.152 0.34787 436.152Z"/>
+      <path class="laurel-leaf leaf-5" fill="var(--ink)" d="M184.598 409.152C167.348 414.902 148.348 429.152 137.098 444.402C125.848 459.402 118.848 482.152 119.848 501.902C120.098 507.902 124.098 510.902 130.098 509.652C149.348 505.152 169.348 491.402 179.598 475.152C190.348 458.652 197.098 435.652 196.098 417.152C196.098 409.902 191.598 406.652 184.598 409.152Z"/>
+      <path class="laurel-leaf leaf-6" fill="var(--ink)" d="M131.098 333.402C116.098 345.402 103.598 366.152 99.8479 384.902C98.5979 390.402 101.848 394.652 107.598 394.902C127.348 395.402 150.098 386.902 164.348 373.902C178.598 361.652 191.348 340.902 195.598 321.902C196.598 315.402 192.848 311.152 186.348 311.402C167.098 312.902 145.098 321.402 131.098 333.402Z"/>
+      <path class="laurel-leaf leaf-7" fill="var(--ink)" d="M0.84787 290.902C-1.40213 309.152 4.09787 332.652 14.0979 349.652C23.8479 366.902 42.5979 381.902 60.8479 387.152C66.5979 388.902 71.0979 385.902 71.8479 379.902C73.8479 361.652 68.5979 338.152 58.0979 321.402C47.8479 305.402 29.5979 290.152 12.8479 283.652C6.34787 280.652 1.59787 283.402 0.84787 290.902Z"/>
+      <path class="laurel-leaf leaf-8" fill="var(--ink)" d="M148.598 225.152C130.348 231.402 111.348 246.152 101.348 262.402C98.0979 267.402 99.8479 272.402 105.098 274.902C123.098 282.402 147.348 282.402 165.598 274.652C184.348 267.402 203.098 252.152 212.598 236.152C216.098 230.402 214.098 225.652 207.598 223.402C189.598 218.152 165.848 218.652 148.598 225.152Z"/>
+      <path class="laurel-leaf leaf-9" fill="var(--ink)" d="M40.8479 140.152C32.3479 157.902 29.0979 181.902 32.8479 200.152C36.0979 219.402 48.5979 240.152 64.3479 251.402C68.8479 255.152 73.8479 253.652 76.8479 248.402C85.3479 231.402 88.0979 207.902 83.8479 189.152C79.8479 170.652 68.0979 149.902 54.5979 137.402C49.3479 133.152 43.8479 134.152 40.8479 140.152Z"/>
+      <path class="laurel-leaf leaf-10" fill="var(--ink)" d="M206.848 131.902C187.598 135.652 167.098 147.902 155.348 162.402C151.598 166.902 152.598 171.652 157.598 174.902C174.098 185.152 198.098 188.152 217.098 183.152C236.098 178.902 256.848 166.402 269.098 152.152C273.598 146.902 272.348 141.402 266.098 138.652C249.098 131.152 225.598 128.402 206.848 131.902Z"/>
+      <path class="laurel-leaf leaf-11" fill="var(--ink)" d="M112.098 32.6521C101.348 48.9021 94.8479 72.1521 96.0979 90.6521C96.3479 109.902 106.098 132.152 119.848 146.402C124.598 150.652 129.598 150.152 133.098 145.152C143.598 128.652 149.848 105.402 148.348 87.1521C147.098 68.6521 138.098 46.9021 126.098 31.9021C121.348 26.6521 115.848 27.1521 112.098 32.6521Z"/>
+      <path class="laurel-leaf leaf-12" fill="var(--ink)" d="M277.848 0.152063C259.098 3.15206 238.098 14.1521 224.848 27.4021C211.348 40.6521 200.848 62.4021 198.598 81.1521C198.098 87.1521 201.348 90.6521 207.348 90.4021C226.848 89.4021 248.598 78.9021 261.848 64.1521C274.598 50.9021 285.098 29.1521 288.098 10.1521C288.848 3.15206 285.098-0.847937 277.848 0.152063Z"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 577.4 514.4">
+      <path fill="var(--gold)" d="M316.9 18C311.6 7.3 300.7 0 288.7 0S265.8 7.3 260.5 18L195 150.3 49.1 171.5C37.3 173.2 27.5 181.5 23.8 192.9S23.3 216.7 31.9 225L137.5 328 112.6 473.4C110.6 485.2 115.5 497.2 125.2 504.3S147.7 512.3 158.3 506.7L288.7 438.1 419 506.5C429.6 512.1 442.3 511.1 452 504S466.6 485 464.6 473.2L439.7 328 545.2 225C553.8 216.7 556.9 204.3 553.2 192.9S539.8 173.2 528 171.5L382.1 150.3 316.9 18Z"/>
+    </symbol>
+  </defs>
+
+  <g class="branch-enter">
+    <g class="branch-left"><use href="#laurel" x="108" y="35" width="168" height="356"/></g>
+  </g>
+  <g class="branch-enter right">
+    <g transform="translate(1000 0) scale(-1 1)"><g class="branch-right"><use href="#laurel" x="108" y="35" width="168" height="356"/></g></g>
+  </g>
+
+  <g class="bird-enter">
+    <svg x="350" y="49" width="300" height="330" viewBox="280 200 750 810" overflow="visible">
+      <g transform="translate(0 1254) scale(.1 -.1)">
+        <path class="bird-fill" fill="var(--ink)" d="M5474 9810 c-1121 -87 -2028 -890 -2314 -2050 -72 -294 -99 -503 -107 -840 -21 -892 191 -1652 640 -2292 251 -357 649 -723 1002 -918 141 -78 138 -59 33 -172 -580 -626 -630 -690 -644 -819 -29 -262 263 -457 510 -341 101 48 191 143 761 807 112 130 195 219 204 218 9 -1 81 -10 161 -19 108 -13 225 -18 457 -18 172 -1 313 -2 313 -4 0 -3 -119 -159 -365 -477 -59 -77 -122 -169 -139 -205 -80 -171 -10 -366 163 -452 39 -19 62 -23 146 -23 171 0 234 48 432 326 102 143 498 733 588 874 33 53 48 66 119 104 44 24 189 105 320 179 353 198 439 232 593 232 142 0 227 -43 463 -230 148 -119 218 -166 295 -201 540 -245 1067 358 785 900 -182 350 -548 463 -1045 324 -49 -13 -160 -47 -245 -75 -680 -220 -1013 -267 -1539 -217 -849 81 -1446 489 -1816 1244 -195 397 -253 755 -143 881 53 60 119 83 187 64 82 -22 125 -79 156 -210 40 -167 132 -379 232 -535 345 -533 900 -869 1588 -960 589 -78 1386 48 1506 238 74 116 -92 549 -354 922 -210 298 -428 519 -857 869 -349 285 -419 344 -492 417 -103 104 -132 161 -133 259 0 91 26 143 106 213 110 96 497 305 904 487 202 90 239 112 255 149 29 72 -6 112 -157 180 -275 122 -501 276 -884 599 -500 423 -1077 619 -1685 572z m131 -1125 c132 -35 235 -120 294 -244 34 -72 36 -81 36 -181 0 -160 -49 -264 -170 -363 -93 -74 -147 -92 -291 -92 -119 0 -121 0 -195 37 -192 95 -288 305 -234 511 22 83 47 128 114 200 117 124 284 174 446 132z"/>
+        <path class="bird-outline" pathLength="1" d="M5474 9810 c-1121 -87 -2028 -890 -2314 -2050 -72 -294 -99 -503 -107 -840 -21 -892 191 -1652 640 -2292 251 -357 649 -723 1002 -918 141 -78 138 -59 33 -172 -580 -626 -630 -690 -644 -819 -29 -262 263 -457 510 -341 101 48 191 143 761 807 112 130 195 219 204 218 9 -1 81 -10 161 -19 108 -13 225 -18 457 -18 172 -1 313 -2 313 -4 0 -3 -119 -159 -365 -477 -59 -77 -122 -169 -139 -205 -80 -171 -10 -366 163 -452 39 -19 62 -23 146 -23 171 0 234 48 432 326 102 143 498 733 588 874 33 53 48 66 119 104 44 24 189 105 320 179 353 198 439 232 593 232 142 0 227 -43 463 -230 148 -119 218 -166 295 -201 540 -245 1067 358 785 900 -182 350 -548 463 -1045 324 -49 -13 -160 -47 -245 -75 -680 -220 -1013 -267 -1539 -217 -849 81 -1446 489 -1816 1244 -195 397 -253 755 -143 881 53 60 119 83 187 64 82 -22 125 -79 156 -210 40 -167 132 -379 232 -535 345 -533 900 -869 1588 -960 589 -78 1386 48 1506 238 74 116 -92 549 -354 922 -210 298 -428 519 -857 869 -349 285 -419 344 -492 417 -103 104 -132 161 -133 259 0 91 26 143 106 213 110 96 497 305 904 487 202 90 239 112 255 149 29 72 -6 112 -157 180 -275 122 -501 276 -884 599 -500 423 -1077 619 -1685 572z"/>
+        <path class="bird-filament" pathLength="1" d="M5474 9810 c-1121 -87 -2028 -890 -2314 -2050 -72 -294 -99 -503 -107 -840 -21 -892 191 -1652 640 -2292 251 -357 649 -723 1002 -918 141 -78 138 -59 33 -172 -580 -626 -630 -690 -644 -819 -29 -262 263 -457 510 -341 101 48 191 143 761 807 112 130 195 219 204 218 9 -1 81 -10 161 -19 108 -13 225 -18 457 -18 172 -1 313 -2 313 -4 0 -3 -119 -159 -365 -477 -59 -77 -122 -169 -139 -205 -80 -171 -10 -366 163 -452 39 -19 62 -23 146 -23 171 0 234 48 432 326 102 143 498 733 588 874 33 53 48 66 119 104 44 24 189 105 320 179 353 198 439 232 593 232 142 0 227 -43 463 -230 148 -119 218 -166 295 -201 540 -245 1067 358 785 900 -182 350 -548 463 -1045 324 -49 -13 -160 -47 -245 -75 -680 -220 -1013 -267 -1539 -217 -849 81 -1446 489 -1816 1244 -195 397 -253 755 -143 881 53 60 119 83 187 64 82 -22 125 -79 156 -210 40 -167 132 -379 232 -535 345 -533 900 -869 1588 -960 589 -78 1386 48 1506 238 74 116 -92 549 -354 922 -210 298 -428 519 -857 869 -349 285 -419 344 -492 417 -103 104 -132 161 -133 259 0 91 26 143 106 213 110 96 497 305 904 487 202 90 239 112 255 149 29 72 -6 112 -157 180 -275 122 -501 276 -884 599 -500 423 -1077 619 -1685 572z"/>
+      </g>
+    </svg>
+  </g>
+
+  <use class="star left s1" href="#star" x="382" y="411" width="31" height="28"/>
+  <use class="star left s2" href="#star" x="435" y="402" width="42" height="38"/>
+  <use class="star s3" href="#star" x="488" y="392" width="53" height="48"/>
+  <use class="star right s4" href="#star" x="548" y="402" width="42" height="38"/>
+  <use class="star right s5" href="#star" x="607" y="411" width="31" height="28"/>
+</svg>
