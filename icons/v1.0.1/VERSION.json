@@ -1,0 +1,12 @@
+{
+  "iconVersion": "1.0.1",
+  "geometrySource": "bird-logo-black.svg / bird-logo-white.svg",
+  "originalReference": "wosaide-bird.png",
+  "background": "transparent",
+  "lightTheme": "black bird (#242424), transparent background",
+  "darkTheme": "white bird (#ffffff), transparent background",
+  "circleBackground": false,
+  "fillRatio": 0.84,
+  "generatedAt": "2026-09-14T05:39:22Z",
+  "packages": ["xcode-macos", "electron", "windows", "chrome-extension", "chrome-web-store"]
+}

@@ -1,0 +1,8 @@
+{
+  "images" : [
+    {"filename":"bird-black.png","idiom":"universal","scale":"1x"},
+    {"appearances":[{"appearance":"luminosity","value":"dark"}],"filename":"bird-white.png","idiom":"universal","scale":"1x"}
+  ],
+  "info" : {"author":"xcode","version":1},
+  "properties" : {"preserves-vector-representation":false}
+}

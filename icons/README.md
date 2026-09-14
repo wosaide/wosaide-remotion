@@ -1,11 +1,14 @@
 # WOS Aide Icons
 
-Current icon kit: **v1.0.0**
+Current icon kit: **v1.0.1**
 
-Canonical source: `../wosaide-bird.png`
+Theme contract:
 
-Rebuild with:
+- Light: black bird, transparent background.
+- Dark: white bird, transparent background.
+- No circular background.
 
-`npm run icons:build`
+Canonical raster generation comes from `../bird-logo-black.svg` and `../bird-logo-white.svg`.
+The original `../wosaide-bird.png` is visual reference only and is **not** used as a raster source.
 
-Generated packages are under `dist/` and the versioned source tree is under `v1.0.0/`.
+Rebuild with `npm run icons:build`.
